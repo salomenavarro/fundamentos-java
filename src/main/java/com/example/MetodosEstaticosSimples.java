@@ -1,8 +1,13 @@
 package com.example;
 
 public class MetodosEstaticosSimples {
+
     public static void ejemploDeclaracionLlamada() {
-        System.out.println("Método sin parámetros ejecutado.");
+        System.out.println("Método estático simple ejecutado con éxito.");
+    }
+
+    public static void ejemploPasoParametros(String nombre, int edad) {
+        System.out.println("Parámetros recibidos -> Nombre: " + nombre + ", Edad: " + edad);
     }
 
     public static int ejemploRetornoValores(int a, int b) {
@@ -10,10 +15,10 @@ public class MetodosEstaticosSimples {
     }
 
     public static void ejemploSobrecarga(String msg) {
-        System.out.println("Mensaje: " + msg);
+        System.out.println("Sobrecarga (String): " + msg);
     }
 
     public static void ejemploSobrecarga(int num) {
-        System.out.println("Número: " + num);
+        System.out.println("Sobrecarga (int): " + num);
     }
 }
